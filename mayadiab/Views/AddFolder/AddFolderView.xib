@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="AddFolderView" id="iN0-l3-epB" customClass="AddFolderView" customModule="mayadiab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJG-tY-gIp">
+                    <rect key="frame" x="200" y="399.5" width="368" height="245"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Folder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpn-x7-PKL">
+                            <rect key="frame" x="16" y="16" width="336" height="27.5"/>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="24"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZk-8U-kMi">
+                            <rect key="frame" x="20" y="97.5" width="328" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Folder name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvA-bQ-m9y">
+                                    <rect key="frame" x="8" y="0.0" width="312" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="yes"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="1BS-q2-A6C"/>
+                                <constraint firstItem="cvA-bQ-m9y" firstAttribute="leading" secondItem="iZk-8U-kMi" secondAttribute="leading" constant="8" id="2xP-VD-pTy"/>
+                                <constraint firstItem="cvA-bQ-m9y" firstAttribute="top" secondItem="iZk-8U-kMi" secondAttribute="top" id="A77-fZ-WiL"/>
+                                <constraint firstAttribute="trailing" secondItem="cvA-bQ-m9y" secondAttribute="trailing" constant="8" id="LC7-wd-BSj"/>
+                                <constraint firstAttribute="bottom" secondItem="cvA-bQ-m9y" secondAttribute="bottom" id="oqd-bT-yRn"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="njW-M2-r85">
+                            <rect key="frame" x="50" y="194" width="268" height="35"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhZ-gB-qz5">
+                                    <rect key="frame" x="0.0" y="0.0" width="126" height="35"/>
+                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonCancelTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xcl-3l-R2l"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcE-JW-eQ4">
+                                    <rect key="frame" x="142" y="0.0" width="126" height="35"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="18"/>
+                                    <state key="normal" title="Add">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Mnb-CY-9SW"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="iZk-8U-kMi" firstAttribute="centerY" secondItem="LJG-tY-gIp" secondAttribute="centerY" id="8Po-sH-TyZ"/>
+                        <constraint firstItem="njW-M2-r85" firstAttribute="centerX" secondItem="LJG-tY-gIp" secondAttribute="centerX" id="DeN-u2-Amu"/>
+                        <constraint firstItem="njW-M2-r85" firstAttribute="leading" secondItem="LJG-tY-gIp" secondAttribute="leading" constant="50" id="KNx-GB-JVR"/>
+                        <constraint firstAttribute="trailing" secondItem="gpn-x7-PKL" secondAttribute="trailing" constant="16" id="YZ3-II-7vP"/>
+                        <constraint firstAttribute="width" secondItem="LJG-tY-gIp" secondAttribute="height" multiplier="368:245" id="bF8-jF-Y5Z"/>
+                        <constraint firstAttribute="trailing" secondItem="iZk-8U-kMi" secondAttribute="trailing" constant="20" id="ckQ-If-nIw"/>
+                        <constraint firstAttribute="bottom" secondItem="njW-M2-r85" secondAttribute="bottom" constant="16" id="iMA-EC-gQK"/>
+                        <constraint firstItem="gpn-x7-PKL" firstAttribute="leading" secondItem="LJG-tY-gIp" secondAttribute="leading" constant="16" id="mTn-ef-Bcs"/>
+                        <constraint firstAttribute="trailing" secondItem="njW-M2-r85" secondAttribute="trailing" constant="50" id="oZz-ad-R4g"/>
+                        <constraint firstAttribute="width" secondItem="LJG-tY-gIp" secondAttribute="height" multiplier="15:10" id="ySA-C1-Fc7"/>
+                        <constraint firstItem="iZk-8U-kMi" firstAttribute="leading" secondItem="LJG-tY-gIp" secondAttribute="leading" constant="20" id="yWt-3g-UJw"/>
+                        <constraint firstItem="gpn-x7-PKL" firstAttribute="top" secondItem="LJG-tY-gIp" secondAttribute="top" constant="16" id="yYj-lt-IJg"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ySA-C1-Fc7"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LJG-tY-gIp" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="DK4-OC-AkF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LJG-tY-gIp" secondAttribute="trailing" constant="200" id="WBR-Aq-BMy"/>
+                <constraint firstItem="LJG-tY-gIp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="200" id="cyq-CE-x4R"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="buttonCancel" destination="IhZ-gB-qz5" id="jj3-Wf-IzI"/>
+                <outlet property="buttonSave" destination="PcE-JW-eQ4" id="Cpw-HZ-oh4"/>
+                <outlet property="labelTitle" destination="gpn-x7-PKL" id="4Wg-rC-RlL"/>
+                <outlet property="textFieldFolderName" destination="cvA-bQ-m9y" id="O2u-nS-1ml"/>
+                <outlet property="viewFolderName" destination="iZk-8U-kMi" id="oOu-x8-LH6"/>
+                <outlet property="viewPopup" destination="LJG-tY-gIp" id="usY-AV-jJD"/>
+            </connections>
+            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+        </view>
+    </objects>
+</document>

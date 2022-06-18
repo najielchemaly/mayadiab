@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="OutfitView" id="iN0-l3-epB" customClass="OutfitView" customModule="mayadiab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nxg-qk-6Sv">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qu5-Wz-Euq">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2T2-aO-DAb">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="150"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dQk-nA-Q90">
+                                    <rect key="frame" x="75" y="0.0" width="75" height="150"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ayo-Zf-Ufa">
+                                    <rect key="frame" x="150" y="0.0" width="75" height="150"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ASZ-fv-4kX">
+                                    <rect key="frame" x="225" y="0.0" width="75" height="150"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lde-ed-Fin">
+                            <rect key="frame" x="0.0" y="150" width="300" height="150"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z11-YR-ZXy">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="150"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iAE-QN-ySW">
+                                    <rect key="frame" x="75" y="0.0" width="75" height="150"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PpO-g4-Tbj">
+                                    <rect key="frame" x="150" y="0.0" width="75" height="150"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5PV-2G-8fj">
+                                    <rect key="frame" x="225" y="0.0" width="75" height="150"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCG-cA-27t">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nxg-qk-6Sv" secondAttribute="bottom" id="AyE-xf-qQ8"/>
+                <constraint firstItem="HCG-cA-27t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KXz-6F-AFX"/>
+                <constraint firstItem="nxg-qk-6Sv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ko4-2n-3un"/>
+                <constraint firstItem="nxg-qk-6Sv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PJA-1C-Enr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nxg-qk-6Sv" secondAttribute="trailing" id="TsF-nL-kOc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HCG-cA-27t" secondAttribute="bottom" id="ZKl-B3-O5y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HCG-cA-27t" secondAttribute="trailing" id="ex5-7n-Ijt"/>
+                <constraint firstItem="HCG-cA-27t" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hxL-p2-6IR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageEight" destination="5PV-2G-8fj" id="j2X-LM-tor"/>
+                <outlet property="imageFive" destination="Z11-YR-ZXy" id="IeJ-4I-4kz"/>
+                <outlet property="imageFour" destination="ASZ-fv-4kX" id="odk-sg-2a0"/>
+                <outlet property="imageOne" destination="2T2-aO-DAb" id="8ub-cd-oGb"/>
+                <outlet property="imageSeven" destination="PpO-g4-Tbj" id="e5w-io-CyO"/>
+                <outlet property="imageSix" destination="iAE-QN-ySW" id="NVn-vG-JiD"/>
+                <outlet property="imageThree" destination="ayo-Zf-Ufa" id="gdV-fl-JrU"/>
+                <outlet property="imageTwo" destination="dQk-nA-Q90" id="v3E-gf-cdi"/>
+                <outlet property="stackOne" destination="qu5-Wz-Euq" id="b5m-7K-BaB"/>
+                <outlet property="stackTwo" destination="lde-ed-Fin" id="uRY-1D-BxZ"/>
+                <outlet property="viewOverlay" destination="HCG-cA-27t" id="TXX-FC-sME"/>
+            </connections>
+        </view>
+    </objects>
+</document>

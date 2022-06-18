@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SelectFolderView" id="iN0-l3-epB" customClass="SelectFolderView" customModule="mayadiab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jnt-sh-wMl">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6ec-g9-qBs">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="5FD-4y-mqN"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="75t-vQ-enH"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFH-u2-r76">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE FOLDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfY-RX-hu6">
+                            <rect key="frame" x="102.5" y="13.5" width="170" height="23"/>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-Yi-DSj">
+                            <rect key="frame" x="311" y="8" width="48" height="34"/>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonCancelTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="bus-9c-nn3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="4bo-Yi-DSj" secondAttribute="trailing" constant="16" id="L38-1a-Cil"/>
+                        <constraint firstItem="4bo-Yi-DSj" firstAttribute="top" secondItem="DFH-u2-r76" secondAttribute="top" constant="8" id="cVl-mf-An1"/>
+                        <constraint firstItem="QfY-RX-hu6" firstAttribute="centerX" secondItem="DFH-u2-r76" secondAttribute="centerX" id="fJI-F7-loN"/>
+                        <constraint firstAttribute="bottom" secondItem="4bo-Yi-DSj" secondAttribute="bottom" constant="8" id="gGw-cE-cyi"/>
+                        <constraint firstItem="QfY-RX-hu6" firstAttribute="centerY" secondItem="DFH-u2-r76" secondAttribute="centerY" id="lCY-c3-gaD"/>
+                        <constraint firstAttribute="height" constant="50" id="lmT-Bh-eqF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jnt-sh-wMl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4GC-yR-6Et"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jnt-sh-wMl" secondAttribute="trailing" id="8yr-6M-tdN"/>
+                <constraint firstItem="DFH-u2-r76" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GQo-X1-LGZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jnt-sh-wMl" secondAttribute="bottom" id="X0i-j5-GY1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DFH-u2-r76" secondAttribute="trailing" id="e1c-V7-bWX"/>
+                <constraint firstItem="jnt-sh-wMl" firstAttribute="top" secondItem="DFH-u2-r76" secondAttribute="bottom" id="f6j-R9-zw3"/>
+                <constraint firstItem="DFH-u2-r76" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="foD-vb-Onn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="jnt-sh-wMl" id="ebc-jh-Gbw"/>
+            </connections>
+        </view>
+    </objects>
+</document>

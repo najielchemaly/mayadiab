@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ImageFullScreenView" id="iN0-l3-epB" customClass="ImageFullScreenView" customModule="mayadiab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJu-T8-GRD">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX8-fx-TLM">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="924"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pNW-GN-DlQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="924"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="pNW-GN-DlQ" firstAttribute="centerX" secondItem="bX8-fx-TLM" secondAttribute="centerX" id="Ijx-ta-Fjh"/>
+                                <constraint firstAttribute="bottom" secondItem="pNW-GN-DlQ" secondAttribute="bottom" id="Ix7-CZ-xjz"/>
+                                <constraint firstItem="pNW-GN-DlQ" firstAttribute="centerY" secondItem="bX8-fx-TLM" secondAttribute="centerY" id="PHY-c5-1Si"/>
+                                <constraint firstItem="pNW-GN-DlQ" firstAttribute="leading" secondItem="bX8-fx-TLM" secondAttribute="leading" id="VVP-gK-ajg"/>
+                                <constraint firstItem="pNW-GN-DlQ" firstAttribute="top" secondItem="bX8-fx-TLM" secondAttribute="top" id="ZSe-xs-s7y"/>
+                                <constraint firstAttribute="trailing" secondItem="pNW-GN-DlQ" secondAttribute="trailing" id="e81-ea-HhB"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bX8-fx-TLM" secondAttribute="bottom" constant="100" id="9Hd-aM-Eti"/>
+                        <constraint firstItem="bX8-fx-TLM" firstAttribute="top" secondItem="bJu-T8-GRD" secondAttribute="top" id="MlR-EJ-943"/>
+                        <constraint firstAttribute="trailing" secondItem="bX8-fx-TLM" secondAttribute="trailing" id="WEp-MP-uEl"/>
+                        <constraint firstItem="bX8-fx-TLM" firstAttribute="leading" secondItem="bJu-T8-GRD" secondAttribute="leading" id="Wc7-CI-MaG"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdR-sF-ODi">
+                    <rect key="frame" x="309" y="954" width="150" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="cpS-QJ-aqi"/>
+                        <constraint firstAttribute="height" constant="50" id="tfs-4T-Ob1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonCloseTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="q5M-kt-Mxk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bJu-T8-GRD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="A3C-Xe-VuG"/>
+                <constraint firstItem="bJu-T8-GRD" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="JUe-kP-CNh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bJu-T8-GRD" secondAttribute="trailing" id="Ro9-pY-2hM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XdR-sF-ODi" secondAttribute="bottom" constant="20" id="Swl-PF-YMa"/>
+                <constraint firstItem="XdR-sF-ODi" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="whF-9s-vlS"/>
+                <constraint firstItem="bJu-T8-GRD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zc4-Kk-gd0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="pNW-GN-DlQ" id="SVu-tE-sb8"/>
+                <outlet property="scrollView" destination="bX8-fx-TLM" id="XvA-Kv-eIQ"/>
+            </connections>
+            <point key="canvasLocation" x="40.625" y="46.2890625"/>
+        </view>
+    </objects>
+</document>

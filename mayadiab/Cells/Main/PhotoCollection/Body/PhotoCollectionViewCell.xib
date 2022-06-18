@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell" customModule="mayadiab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hBR-X7-caF">
+                        <rect key="frame" x="24" y="24" width="252" height="252"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gL3-qF-Dy0">
+                        <rect key="frame" x="24" y="24" width="252" height="252"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="rFJ-4A-BOW">
+                                <rect key="frame" x="204" y="204" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="EpM-yQ-gNn"/>
+                                    <constraint firstAttribute="height" constant="40" id="zGZ-mR-Vuu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.44100451469421387" green="0.74883908033370972" blue="0.9965779185295105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rFJ-4A-BOW" secondAttribute="trailing" constant="8" id="Bf4-Qw-HNF"/>
+                            <constraint firstAttribute="bottom" secondItem="rFJ-4A-BOW" secondAttribute="bottom" constant="8" id="kEp-7l-Btw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gL3-qF-Dy0" firstAttribute="bottom" secondItem="hBR-X7-caF" secondAttribute="bottom" id="7g9-rV-DxC"/>
+                <constraint firstItem="hBR-X7-caF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="HHF-tx-s6A"/>
+                <constraint firstAttribute="bottom" secondItem="hBR-X7-caF" secondAttribute="bottom" constant="24" id="N9r-8x-AGP"/>
+                <constraint firstItem="gL3-qF-Dy0" firstAttribute="trailing" secondItem="hBR-X7-caF" secondAttribute="trailing" id="PUC-da-PVH"/>
+                <constraint firstItem="hBR-X7-caF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="24" id="bXp-gF-0R2"/>
+                <constraint firstItem="gL3-qF-Dy0" firstAttribute="top" secondItem="hBR-X7-caF" secondAttribute="top" id="f6w-p0-t8N"/>
+                <constraint firstItem="gL3-qF-Dy0" firstAttribute="leading" secondItem="hBR-X7-caF" secondAttribute="leading" id="iKI-YN-KPY"/>
+                <constraint firstAttribute="trailing" secondItem="hBR-X7-caF" secondAttribute="trailing" constant="24" id="kY8-ul-80N"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="N9r-8x-AGP" id="dg1-Ea-eVg"/>
+                <outlet property="imageCheck" destination="rFJ-4A-BOW" id="U24-35-tt9"/>
+                <outlet property="imageViewPhoto" destination="hBR-X7-caF" id="31A-uq-4NB"/>
+                <outlet property="leadingConstraint" destination="HHF-tx-s6A" id="F6V-ZE-duS"/>
+                <outlet property="topConstraint" destination="bXp-gF-0R2" id="Sp8-Ff-FDZ"/>
+                <outlet property="trailingConstraint" destination="kY8-ul-80N" id="5fX-2q-8UZ"/>
+                <outlet property="viewCheck" destination="gL3-qF-Dy0" id="I9k-DC-xgK"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="46"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="192" height="192"/>
+    </resources>
+</document>
